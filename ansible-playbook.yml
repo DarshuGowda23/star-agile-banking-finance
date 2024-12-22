@@ -13,4 +13,4 @@
     command : sudo systemctl start docker
 
   - name: Deploy Docker Container
-    command: docker run -itd -p 8084:8082 leenab88/healthcare-webapp:v.{{ IMAGE_TAG }}
+    command: docker run -itd -p 8089:8082 leenab88/healthcare-webapp:v.{{ IMAGE_TAG }}
