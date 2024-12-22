@@ -8,7 +8,6 @@ COPY ${JAR_FILE} app.jar
 RUN chmod +x /app.jar
 
 # Set the entry point for the Java application
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+CMD ["java", "-jar", "/app.jar"]
 
 # Optional: Expose the port (if needed for a web application)
-EXPOSE 8084
